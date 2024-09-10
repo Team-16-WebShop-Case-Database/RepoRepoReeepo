@@ -21,8 +21,9 @@ namespace WebshopCase.Model
 
         public Category(string CategoryName, string CategoryDescription)
         {
-            CategoryName = CategoryName;
-            CategoryDescription = CategoryDescription;
+            this.CategoryName = CategoryName;
+this.CategoryDescription = CategoryDescription;
+Products = new List<Product>();
 
 
         }
