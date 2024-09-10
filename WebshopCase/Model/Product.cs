@@ -17,23 +17,22 @@ namespace WebshopCase.Model
 
         public string Stock { get; set; }
 
-        public string ImageFilePath { get; set; }
+public string ImageFilePath { get; set; }
 
-        public int CategoryID { get; set; }
+public Category Category { get; set; }
 
-        Category category = new Category();
+public int CategoryID { get; set; }
 
-        public Product() { 
-        }
-
-        public Product(int productID, string productName, string description, decimal price, string stock, string imageFilePath, Category category)
-        {
-            ProductID = productID;
-            ProductName = productName;
-            Description = description;
-            Price = price;
-            Stock = stock;
-            ImageFilePath = imageFilePath;
+       public Product(int productID, string productName, string description, decimal price, string stock, string imageFilePath, Category category)
+ {
+     ProductID = productID;
+     ProductName = productName;
+     Description = description;
+     Price = price;
+     Stock = stock;
+     ImageFilePath = imageFilePath;
+     Category = category;
+     CategoryID = category.CategoryId;
 
         }
 
